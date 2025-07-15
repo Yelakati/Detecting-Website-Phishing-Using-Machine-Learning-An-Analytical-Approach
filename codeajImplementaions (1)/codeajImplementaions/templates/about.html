@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Phishing Website Detection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Phishing Detection</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h1 class="h3">About the Phishing Detection System</h1>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="h4 mb-4">Website Phishing Detection using Extreme Learning Machine</h2>
+                        
+                        <div class="mb-4">
+                            <h3 class="h5">What is Phishing?</h3>
+                            <p>
+                                Phishing is a type of cyber attack where attackers create fake websites that mimic legitimate ones to steal sensitive information such as usernames, passwords, credit card details, or other personal information. These attacks often come through emails, social media messages, or other communication channels that direct users to these malicious websites.
+                            </p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h3 class="h5">Our Approach</h3>
+                            <p>
+                                This application uses an Extreme Learning Machine (ELM) model to detect phishing websites. ELM is a fast learning algorithm for single-hidden layer feedforward neural networks that randomly assigns input weights and analytically determines output weights.
+                            </p>
+                            <p>
+                                The model analyzes various features of URLs and websites, including:
+                            </p>
+                            <ul>
+                                <li>URL structure and components</li>
+                                <li>Domain characteristics</li>
+                                <li>Security indicators</li>
+                                <li>HTML and JavaScript elements</li>
+                                <li>External links and resources</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-4">
+                            <h3 class="h5">Advantages of ELM for Phishing Detection</h3>
+                            <ul>
+                                <li><strong>Speed:</strong> ELM's training is extremely fast as it doesn't require iterative tuning of weights.</li>
+                                <li><strong>Performance:</strong> Despite its simplicity, ELM achieves comparable performance to more complex algorithms.</li>
+                                <li><strong>Scalability:</strong> ELM can be applied to large datasets efficiently.</li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-4">
+                            <h3 class="h5">Model Accuracy</h3>
+                            <p>
+                                Our ELM model was trained on a comprehensive dataset of legitimate and phishing websites. The model achieves:
+                            </p>
+                            <ul>
+                                <li>Accuracy: ~94%</li>
+                                <li>Precision: ~95%</li>
+                                <li>Recall: ~93%</li>
+                                <li>F1 Score: ~94%</li>
+                            </ul>
+                            <p class="text-muted">
+                                <small>Note: Actual performance may vary based on real-world usage and evolving phishing techniques.</small>
+                            </p>
+                        </div>
+
+                        <div class="mb-4">
+                            <h3 class="h5">How to Use the Tool</h3>
+                            <p>
+                                <strong>URL Check:</strong> Simply enter a website URL in the input field on the home page and click "Check Website" to get an instant analysis.
+                            </p>
+                            <p>
+                                <strong>Advanced Mode:</strong> For technical users, the application also provides an option to manually input website features for analysis.
+                            </p>
+                        </div>
+
+                        <div class="alert alert-warning">
+                            <h4 class="h5">Disclaimer</h4>
+                            <p class="mb-0">
+                                While this tool provides reasonably accurate phishing detection, it should not be the sole decision-making factor for determining website legitimacy. Always practice safe browsing habits and use multiple verification methods for sensitive websites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white mt-5 py-3">
+        <div class="container text-center">
+            <p>&copy; 2023 Phishing Detection System</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html> 

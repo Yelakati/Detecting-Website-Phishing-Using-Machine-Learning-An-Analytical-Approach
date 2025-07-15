@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <style>
+    .shield { fill: #ffffff; }
+    .lock { fill: #f8f9fa; }
+    .circle { fill: #4361ee; }
+    .phish { fill: #e63946; }
+    .eye { fill: #212529; }
+    .shine { fill: #f8f9fa; opacity: 0.3; }
+  </style>
+  
+  <!-- Background shapes -->
+  <circle cx="400" cy="300" r="250" fill="#3a0ca3" opacity="0.1"/>
+  <circle cx="500" cy="200" r="150" fill="#4361ee" opacity="0.1"/>
+  
+  <!-- Shield -->
+  <path class="shield" d="M400 120 C 500 120, 600 150, 600 250 C 600 400, 400 480, 400 480 C 400 480, 200 400, 200 250 C 200 150, 300 120, 400 120 Z"/>
+  <path class="shine" d="M250 180 C 300 150, 350 140, 400 140 C 450 140, 500 150, 550 180 L 530 360 C 480 410, 430 440, 400 450 L 400 140 Z"/>
+  
+  <!-- Lock icon -->
+  <rect class="lock" x="350" y="250" width="100" height="80" rx="10"/>
+  <rect class="circle" x="370" y="220" width="60" height="60" rx="30" ry="30" fill="none" stroke="#ffffff" stroke-width="12"/>
+  <circle class="circle" cx="400" cy="290" r="10"/>
+  <rect class="circle" x="395" y="290" width="10" height="20"/>
+  
+  <!-- Phishing hook -->
+  <path class="phish" d="M600 300 C 620 270, 650 320, 630 350 L 580 430 C 575 440, 565 450, 550 445 C 540 442, 535 425, 545 415 L 590 350 C 600 335, 590 320, 580 330 L 530 400 C 520 415, 500 425, 480 415 C 460 405, 465 375, 480 365 L 570 250 C 580 235, 595 275, 585 285 L 520 365" fill="none" stroke="#e63946" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Fish eye -->
+  <circle class="eye" cx="565" cy="270" r="5"/>
+  
+  <!-- Digital security elements -->
+  <g transform="translate(250, 340) scale(0.7)">
+    <rect x="0" y="0" width="120" height="20" rx="2" fill="#f8f9fa" opacity="0.7"/>
+    <rect x="15" y="30" width="90" height="20" rx="2" fill="#f8f9fa" opacity="0.7"/>
+    <rect x="30" y="60" width="60" height="20" rx="2" fill="#f8f9fa" opacity="0.7"/>
+    
+    <rect x="210" y="10" width="20" height="20" rx="2" fill="#4cc9f0" opacity="0.8"/>
+    <rect x="240" y="10" width="20" height="20" rx="2" fill="#4cc9f0" opacity="0.8"/>
+    <rect x="190" y="40" width="20" height="20" rx="2" fill="#4cc9f0" opacity="0.8"/>
+    <rect x="220" y="40" width="20" height="20" rx="2" fill="#4cc9f0" opacity="0.8"/>
+    <rect x="250" y="40" width="20" height="20" rx="2" fill="#4cc9f0" opacity="0.8"/>
+    <rect x="200" y="70" width="20" height="20" rx="2" fill="#4cc9f0" opacity="0.8"/>
+    <rect x="230" y="70" width="20" height="20" rx="2" fill="#4cc9f0" opacity="0.8"/>
+  </g>
+</svg> 
